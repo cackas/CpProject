@@ -70,4 +70,7 @@ $(document).ready(function() {
       $('.cmn-toggle-switch').on('click', function() {
         $('.nav__menu').toggleClass('active');
       });
+      $('.btn-sevice--ad').on('click', function() {
+        $('.sidebar').toggleClass('active');
+      });
 })

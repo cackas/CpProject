@@ -69,6 +69,8 @@ header
     color: #010302
 .nav__menu li
   margin-right: 2.4vw
+  &:nth-child(4)
+    margin-right: 27vw
 .nav__logo
   margin-right: 9.7vw
 .logo__img
@@ -329,6 +331,7 @@ footer
   font-family: 'HelveticaNeueCyr-Roman'
   font-size: .93vw
   padding-top: 6.5vw
+  z-index: 1
   .sidebar__menu>li
     padding: 1.2vw 0
     border-bottom: 1px solid #F1F1F3
@@ -462,6 +465,15 @@ footer
   align-items: center
 .contacts__left
   margin-right: 4.7vw
+.btn-sevice--ad
+  display: none
+  width: 2.47vw
+  height: 2.47vw
+  position: absolute
+  top: 1%
+  left: -7%
+  z-index: 2
+  cursor: pointer
 //Hmburger menu
 .cmn-toggle-switch
   display: none
@@ -478,7 +490,7 @@ footer
   border: none
   cursor: pointer
   transition: background 0.3s
-  z-index: 2
+  z-index: 5
 
 .cmn-toggle-switch:focus 
   outline: none 
@@ -490,6 +502,8 @@ footer
   right: 0
   height: 2px
   background: #Fff
+.cmn-toggle-switch--ad.cmn-toggle-switch span
+  background: #D2D2D2
 
 .cmn-toggle-switch span:before,
 .cmn-toggle-switch span:after 
@@ -500,7 +514,9 @@ footer
   height: 2px
   background-color: #Fff
   content: "" 
-
+.cmn-toggle-switch--ad.cmn-toggle-switch span:before,
+.cmn-toggle-switch--ad.cmn-toggle-switch span:after
+  background: #D2D2D2
 .cmn-toggle-switch span:before 
   top: -6px
 
