@@ -68,9 +68,15 @@ $(document).ready(function() {
       });
       }
       $('.cmn-toggle-switch').on('click', function() {
-        $('.nav__menu').toggleClass('active');
+        $('.nav__menu').fadeToggle();
       });
       $('.btn-sevice--ad').on('click', function() {
-        $('.sidebar').toggleClass('active');
+        $('.sidebar').fadeToggle();
+      });
+      $('.project__btn--more').on('click', function() {
+        $(this).parent().next().fadeToggle();
+      });
+      $('.close').on('click', function() {
+        $(this).parent().fadeToggle();
       });
 })

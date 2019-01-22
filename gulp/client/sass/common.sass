@@ -388,7 +388,7 @@ footer
   height: 20.65vw
   margin-bottom: .7vw
   position: relative
-  img
+  &>img
     height: 100%
   &:nth-child(5n+4)
     width: 41.8vw
@@ -409,6 +409,57 @@ footer
   justify-content: center
   align-items: center
   text-align: center
+  .text
+    color: #fff
+.project__info--popup
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  background-color: rgba(#1473E6, .9)
+  color: #fff
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  width: 71vw
+  padding: 5.8vw 6.7vw 6.5vw
+  z-index: 1
+  display: none
+  .text
+    color: #fff
+  img
+    max-height: 40vh
+  .close
+    position: absolute
+    top: 1vw
+    right: 2vw
+    width: 1.8vw
+    height: 1.8vw
+    background-image: url('../images/close.png')
+    background-size: 100% 100%
+    cursor: pointer
+  .project__content
+    width: 100%
+    margin-bottom: 2vw
+  .project__btn
+    display: block
+    font-size: 1.5vw
+    color: #fff
+    right: 9vw
+    bottom: 2vw
+    &:after
+      position: absolute
+      top: 50%
+      left: 109%
+      transform: translate(0,-50%)
+      content: ''
+      width: .73vw
+      height: .52vw
+      background-image: url(../images/view.png)
+      background-size: 100% 100%
+
 .project__btn
   position: absolute
   bottom: 1.14vw
@@ -418,6 +469,7 @@ footer
   align-items: flex-end
   font-family: 'HelveticaNeueCyr-Light'
   font-size: .57vw
+  cursor: pointer
   p
     margin-right: .52vw
   a
@@ -437,6 +489,40 @@ footer
   font-family: 'HelveticaNeueCyr-Light'
   font-size: .9375vw
   line-height: 1.25vw
+  .text
+    font-family: 'HelveticaNeueCyr-Light'
+    font-size: .9375vw
+    line-height: 1.25vw
+.projects__wrap
+  flex-wrap: wrap
+.service-wrap, .service__part
+  width: 50%
+.service__right
+  padding: 0 .83vw
+  margin-bottom: 4.1vw
+.service__title
+  font-family: 'HelveticaNeueCyr-Light'
+  font-size: 1.3vw
+  line-height: 1.8vw
+  margin-bottom: 1.2vw
+.service__content
+  line-height: 1.1vw
+  margin-bottom: 2vw
+.service__btn
+  color: #FF4234
+  position: relative
+  width: fit-content
+  align-self: center
+  &:after
+    position: absolute
+    top: 50%
+    left: 109%
+    transform: translate(0,-50%)
+    content: ''
+    width: .73vw
+    height: .52vw
+    background-image: url(../images/view.png)
+    background-size: 100% 100%
 .works__content
   .project
     width: 27.6vw
