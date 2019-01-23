@@ -34,7 +34,8 @@ gulp.task('scripts', function() {
     return gulp.src([
         'client/libs/jquery/dist/jquery.min.js', 
         'client/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-        'client/libs/slick-carousel/slick/slick.min.js'
+        'client/libs/slick-carousel/slick/slick.min.js',
+        'client/libs/jquery.scrollify.js'
     ])
       .pipe(concat('libs.min.js'))
       .pipe(uglify())
